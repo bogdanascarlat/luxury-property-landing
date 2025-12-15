@@ -28,13 +28,15 @@ const Header: React.FC = () => {
 
   return (
     <motion.header
-      className="absolute top-0 left-0 right-0 z-50 bg-primary-base/20 text-white backdrop-blur-sm border-b border-gray-700"
+      className="absolute top-0 left-0 right-0 z-50 text-white"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       onMouseLeave={() => setActiveMenu("")}
     >
-      <div className="container mx-auto px-4">
+      <div className="absolute inset-0 bg-black/30 backdrop-blur-sm border-b border-white/10"></div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <nav className="flex justify-between items-center h-24">
           <a
             href="/"
