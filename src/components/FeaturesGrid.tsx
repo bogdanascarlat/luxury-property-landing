@@ -83,7 +83,7 @@ const FeaturesGrid: React.FC<FeaturesGridProps> = ({ property }) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group p-8 rounded-2xl bg-gray-50 hover:bg-luxury-navy transition-all duration-500 transform hover:-translate-y-2"
+              className="group p-8 rounded-2xl bg-gray-50 hover:bg-[#1C1C1C] transition-all duration-500 transform hover:-translate-y-2"
             >
               <div className="text-[#C89B3C] text-4xl mb-4">
                 <FontAwesomeIcon icon={feature.icon} />
