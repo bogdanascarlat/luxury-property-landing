@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-luxury-charcoal antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .luxury-button {
+    @apply bg-luxury-gold hover:bg-luxury-darkGold text-white px-8 py-4 
+           rounded-sm font-semibold transition-all duration-300 
+           hover:shadow-2xl hover:scale-105 uppercase tracking-wide text-sm;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+
+  .bg-gradient-dark {
+    background: linear-gradient(to bottom right, #1c1c1c, #111827);
+  }
+
+  .mega-menu-link {
+    @apply text-gray-400 text-sm hover:text-luxury-gold transition-colors duration-200;
+  }
+}
