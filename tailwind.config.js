@@ -12,7 +12,7 @@ export default {
         "secondary-base": "#ffffff",
         "innovation-accent": "rgb(0 68 136)",
         luxury: {
-          gold: "#D4AF37",
+          gold: "#FAFAFA",
           darkGold: "#B8941F",
           navy: "#0A1931",
           charcoal: "#1A1A1A",

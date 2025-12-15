@@ -72,10 +72,10 @@ const FloorPlans: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group bg-[#333333] backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:border-luxury-gold transition-all duration-300"
+              className="group bg-[#333333] backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:border-[#C89B3C] transition-all duration-300"
             >
               <div className="text-center mb-6">
-                <div className="text-5xl font-display font-bold text-luxury-gold">
+                <div className="text-5xl font-display font-bold text-[#C89B3C]">
                   {floor.level}
                 </div>
                 <div className="text-2xl font-bold mt-2">{floor.name}</div>
@@ -86,7 +86,7 @@ const FloorPlans: React.FC = () => {
                   <li key={featureIndex} className="flex items-center">
                     <FontAwesomeIcon
                       icon={faCheck}
-                      className="text-luxury-gold mr-3"
+                      className="text-[#C89B3C] mr-3"
                     />
                     <span>{feature}</span>
                   </li>

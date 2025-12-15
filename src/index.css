@@ -25,7 +25,7 @@
 
 @layer components {
   .luxury-button {
-    @apply bg-luxury-gold hover:bg-luxury-darkGold text-white px-8 py-4 
+    @apply bg-[#C89B3C] hover:bg-luxury-darkGold text-white px-8 py-4 
            rounded-sm font-semibold transition-all duration-300 
            hover:shadow-2xl hover:scale-105 uppercase tracking-wide text-sm;
   }
@@ -39,6 +39,6 @@
   }
 
   .mega-menu-link {
-    @apply text-gray-400 text-sm hover:text-luxury-gold transition-colors duration-200;
+    @apply text-gray-400 text-sm hover:text-[#C89B3C] transition-colors duration-200;
   }
 }

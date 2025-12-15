@@ -20,7 +20,7 @@ const InvestmentSection: React.FC<InvestmentSectionProps> = ({ property }) => {
   const downPaymentAmount = (propertyValue * downPayment) / 100;
   const loanAmount = propertyValue - downPaymentAmount;
 
-  const monthlyInterestRate = 0.04 / 12;
+  const monthlyInterestRate = 0.014611 / 12;
   const numberOfPayments = loanTerm * 12;
   const monthlyPayment =
     (loanAmount *
@@ -96,13 +96,13 @@ const InvestmentSection: React.FC<InvestmentSectionProps> = ({ property }) => {
               transition={{ delay: index * 0.1 }}
               className="bg-white rounded-2xl shadow-xl p-8"
             >
-              <div className="text-luxury-gold text-4xl mb-6">
+              <div className="text-[#C89B3C] text-4xl mb-6">
                 <FontAwesomeIcon icon={card.icon} />
               </div>
               <h3 className="text-2xl font-bold text-luxury-navy mb-4">
                 {card.title}
               </h3>
-              <div className="text-5xl font-display font-bold text-luxury-gold mb-4">
+              <div className="text-5xl font-display font-bold text-[#C89B3C] mb-4">
                 {card.value}
               </div>
               <p className="text-gray-600">{card.description}</p>
@@ -133,7 +133,7 @@ const InvestmentSection: React.FC<InvestmentSectionProps> = ({ property }) => {
                     onChange={(e) => setDownPayment(Number(e.target.value))}
                     className="flex-1"
                   />
-                  <span className="text-2xl font-bold text-luxury-gold">
+                  <span className="text-2xl font-bold text-[#C89B3C]">
                     {downPayment}%
                   </span>
                 </div>
@@ -148,8 +148,8 @@ const InvestmentSection: React.FC<InvestmentSectionProps> = ({ property }) => {
                       onClick={() => setLoanTerm(term)}
                       className={`py-3 rounded-lg font-bold transition-colors ${
                         loanTerm === term
-                          ? "bg-luxury-gold text-black"
-                          : "bg-white/10 hover:bg-luxury-gold hover:text-black"
+                          ? "bg-[#C89B3C] text-black"
+                          : "bg-white/10 hover:bg-[#C89B3C] hover:text-black"
                       }`}
                     >
                       {term}Y
@@ -169,7 +169,7 @@ const InvestmentSection: React.FC<InvestmentSectionProps> = ({ property }) => {
                 </div>
                 <div className="flex justify-between">
                   <span>Down Payment ({downPayment}%)</span>
-                  <span className="font-bold text-luxury-gold">
+                  <span className="font-bold text-[#C89B3C]">
                     {formatCurrency(downPaymentAmount)}
                   </span>
                 </div>
@@ -182,7 +182,7 @@ const InvestmentSection: React.FC<InvestmentSectionProps> = ({ property }) => {
                 <div className="border-t border-white/20 pt-4 mt-4">
                   <div className="flex justify-between text-xl font-bold">
                     <span>Monthly Payment</span>
-                    <span className="text-luxury-gold">
+                    <span className="text-[#C89B3C]">
                       {formatCurrency(monthlyPayment)}
                     </span>
                   </div>

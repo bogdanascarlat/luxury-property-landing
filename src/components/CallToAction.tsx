@@ -47,7 +47,7 @@ const CallToAction: React.FC = () => {
           transition={{ delay: 0.2 }}
           className="flex flex-col sm:flex-row gap-6 justify-center"
         >
-          <button className="bg-luxury-gold text-black px-10 py-4 rounded-lg font-bold text-lg uppercase tracking-wider hover:bg-luxury-gold/90 transition-all transform hover:-translate-y-1">
+          <button className="bg-[#C89B3C] text-black px-10 py-4 rounded-lg font-bold text-lg uppercase tracking-wider hover:bg-[#C89B3C]/90 transition-all transform hover:-translate-y-1">
             <FontAwesomeIcon icon={faHandshake} className="mr-2" /> Make an
             Offer
           </button>

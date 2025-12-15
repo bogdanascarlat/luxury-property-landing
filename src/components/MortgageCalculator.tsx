@@ -32,8 +32,8 @@ const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({
       className="bg-white rounded-2xl p-8 shadow-xl"
     >
       <div className="flex items-center space-x-3 mb-6">
-        <div className="w-10 h-10 bg-luxury-gold/10 rounded-full flex items-center justify-center">
-          <DollarSign className="w-5 h-5 text-luxury-gold" />
+        <div className="w-10 h-10 bg-[#C89B3C]/10 rounded-full flex items-center justify-center">
+          <DollarSign className="w-5 h-5 text-[#C89B3C]" />
         </div>
         <h3 className="text-2xl font-display font-bold">Mortgage Calculator</h3>
       </div>
@@ -42,10 +42,10 @@ const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({
         <div>
           <div className="flex justify-between items-center mb-2">
             <label className="text-sm font-semibold flex items-center space-x-2">
-              <TrendingUp className="w-4 h-4 text-luxury-gold" />
+              <TrendingUp className="w-4 h-4 text-[#C89B3C]" />
               <span>Down Payment</span>
             </label>
-            <span className="text-luxury-gold font-bold">{downPayment}%</span>
+            <span className="text-[#C89B3C] font-bold">{downPayment}%</span>
           </div>
           <input
             type="range"
@@ -54,17 +54,17 @@ const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({
             step="5"
             value={downPayment}
             onChange={(e) => setDownPayment(Number(e.target.value))}
-            className="w-full accent-luxury-gold"
+            className="w-full accent-[#C89B3C]"
           />
         </div>
 
         <div>
           <div className="flex justify-between items-center mb-2">
             <label className="text-sm font-semibold flex items-center space-x-2">
-              <Calendar className="w-4 h-4 text-luxury-gold" />
+              <Calendar className="w-4 h-4 text-[#C89B3C]" />
               <span>Loan Term</span>
             </label>
-            <span className="text-luxury-gold font-bold">{loanTerm}Y</span>
+            <span className="text-[#C89B3C] font-bold">{loanTerm}Y</span>
           </div>
           <div className="grid grid-cols-4 gap-2">
             {[15, 20, 25, 30].map((term) => (
@@ -73,8 +73,8 @@ const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({
                 onClick={() => setLoanTerm(term)}
                 className={`px-4 py-2 rounded-lg font-semibold transition-all ${
                   loanTerm === term
-                    ? "bg-luxury-gold text-white"
-                    : "bg-luxury-cream text-luxury-charcoal hover:bg-luxury-gold/10"
+                    ? "bg-[#C89B3C] text-white"
+                    : "bg-luxury-cream text-luxury-charcoal hover:bg-[#C89B3C]/10"
                 }`}
               >
                 {term}Y
@@ -95,7 +95,7 @@ const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({
           <span className="text-luxury-charcoal/70">
             Down Payment ({downPayment}%)
           </span>
-          <span className="font-bold text-lg text-luxury-gold">
+          <span className="font-bold text-lg text-[#C89B3C]">
             {formatPrice(results.downPayment)}
           </span>
         </div>
@@ -107,7 +107,7 @@ const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({
         </div>
         <div className="flex justify-between items-center pt-4 border-t border-gray-200">
           <span className="font-semibold">Monthly Payment</span>
-          <span className="font-bold text-2xl text-luxury-gold">
+          <span className="font-bold text-2xl text-[#C89B3C]">
             {formatPrice(results.monthlyPayment)}
           </span>
         </div>

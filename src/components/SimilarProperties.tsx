@@ -17,7 +17,7 @@ const SimilarProperties: React.FC = () => {
       location: "Palm Jumeirah",
       price: "$18.9M",
       badge: "New",
-      badgeColor: "bg-luxury-gold text-black",
+      badgeColor: "bg-[#C89B3C] text-black",
       beds: 5,
       baths: 6,
       sqft: "12K",
@@ -29,7 +29,7 @@ const SimilarProperties: React.FC = () => {
       location: "Al Barari",
       price: "$45.2M",
       badge: "Signature",
-      badgeColor: "bg-blue-600 text-white",
+      badgeColor: "bg-[#004488] text-white",
       beds: 8,
       baths: 10,
       sqft: "25K",
@@ -41,7 +41,7 @@ const SimilarProperties: React.FC = () => {
       location: "Business Bay",
       price: "$28.7M",
       badge: "Exclusive",
-      badgeColor: "bg-luxury-gold text-black",
+      badgeColor: "bg-[#C89B3C] text-black",
       beds: 4,
       baths: 5,
       sqft: "9K",
@@ -102,7 +102,7 @@ const SimilarProperties: React.FC = () => {
                     {property.badge}
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-luxury-gold mb-4">
+                <div className="text-2xl font-bold text-[#C89B3C] mb-4">
                   {property.price}
                 </div>
                 <div className="flex justify-between text-gray-600 border-t pt-4">
@@ -132,7 +132,7 @@ const SimilarProperties: React.FC = () => {
         >
           <a
             href="/real-estate"
-            className="inline-flex items-center text-luxury-gold font-bold text-lg hover:text-luxury-navy transition-colors"
+            className="inline-flex items-center text-[#C89B3C] font-bold text-lg hover:text-luxury-navy transition-colors"
           >
             View All Properties
             <FontAwesomeIcon icon={faArrowRight} className="ml-2" />

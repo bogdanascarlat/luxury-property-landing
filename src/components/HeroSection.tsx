@@ -59,7 +59,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ property }) => {
               transition={{ duration: 0.6 }}
               className="flex flex-wrap gap-3 mb-8"
             >
-              <span className="bg-luxury-gold text-black px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider flex items-center">
+              <span className="bg-[#C89B3C] text-black px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider flex items-center">
                 <FontAwesomeIcon icon={faCrown} className="mr-2" />
                 Signature Property
               </span>
@@ -67,11 +67,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ property }) => {
                 <FontAwesomeIcon icon={faStar} className="mr-2" />
                 Exclusive Listing
               </span>
-              <span className="bg-[rgb(0,68,136)] text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider flex items-center">
+              <span className="bg-[#004488] text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider flex items-center">
                 <FontAwesomeIcon icon={faTag} className="mr-2" />
                 For Sale
               </span>
-              <span className="bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider border border-luxury-gold/50 flex items-center">
+              <span className="bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider border border-[#C89B3C]/50 flex items-center">
                 <FontAwesomeIcon icon={faBuilding} className="mr-2" />
                 {property.developer.name}
               </span>
@@ -84,7 +84,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ property }) => {
               className="text-6xl md:text-7xl lg:text-8xl font-display font-bold mb-6 tracking-tight leading-tight"
             >
               <span className="text-white block">Skyline</span>
-              <span className="text-luxury-gold block">Penthouse</span>
+              <span className="text-[#C89B3C] block">Penthouse</span>
             </motion.h1>
 
             <motion.div
@@ -96,9 +96,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ property }) => {
               <div className="relative mr-3">
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
-                  className="text-luxury-gold text-xl animate-pulse"
+                  className="text-[#C89B3C] text-xl animate-pulse"
                 />
-                <div className="absolute inset-0 text-luxury-gold animate-ping opacity-30">
+                <div className="absolute inset-0 text-[#C89B3C] animate-ping opacity-30">
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="text-xl" />
                 </div>
               </div>
@@ -116,15 +116,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ property }) => {
             >
               <div className="mb-8 lg:mb-0">
                 <div className="relative">
-                  <div className="text-5xl md:text-6xl font-display font-bold text-luxury-gold mb-2 relative drop-shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                  <div className="text-5xl md:text-6xl font-display font-bold text-[#C89B3C] relative drop-shadow-[0_0_20px_rgba(212,175,55,0.3)]">
                     {formatPrice(property.price.amount)}
-                    <div className="absolute -bottom-2 left-0 w-full h-px bg-gradient-to-r from-luxury-gold/50 to-transparent"></div>
+                    <div className="absolute -bottom-2 left-0 w-full h-px bg-gradient-to-r from-[#C89B3C]/50 to-transparent"></div>
                   </div>
                 </div>
-                <div className="text-lg text-white/70 flex items-center mt-4">
+                <div className="text-lg text-white/70 flex items-center mt-2">
                   <FontAwesomeIcon
                     icon={faChartLine}
-                    className="text-luxury-gold/70 mr-2"
+                    className="text-[#C89B3C]/70 mr-2"
                   />
                   ${formatSquareFeet(property.price.pricePerSqFt)} per sq. ft.
                 </div>
@@ -132,43 +132,43 @@ const HeroSection: React.FC<HeroSectionProps> = ({ property }) => {
 
               <div className="grid grid-cols-4 gap-6 mt-6 lg:mt-0">
                 <div className="text-center group">
-                  <div className="text-3xl font-bold text-white group-hover:text-luxury-gold transition-colors duration-300">
+                  <div className="text-3xl font-bold text-white group-hover:text-[#C89B3C] transition-colors duration-300">
                     {property.details.bedrooms}
                   </div>
                   <div className="text-sm text-white/70 uppercase tracking-wider mt-1">
                     Bedrooms
                   </div>
-                  <div className="mt-1 w-4 h-0.5 bg-luxury-gold/0 group-hover:bg-luxury-gold transition-all duration-300 mx-auto"></div>
+                  <div className="mt-1 w-4 h-0.5 bg-[#C89B3C]/0 group-hover:bg-[#C89B3C] transition-all duration-300 mx-auto"></div>
                 </div>
 
                 <div className="text-center group">
-                  <div className="text-3xl font-bold text-white group-hover:text-luxury-gold transition-colors duration-300">
+                  <div className="text-3xl font-bold text-white group-hover:text-[#C89B3C] transition-colors duration-300">
                     {property.details.bathrooms}
                   </div>
                   <div className="text-sm text-white/70 uppercase tracking-wider mt-1">
                     Bathrooms
                   </div>
-                  <div className="mt-1 w-4 h-0.5 bg-luxury-gold/0 group-hover:bg-luxury-gold transition-all duration-300 mx-auto"></div>
+                  <div className="mt-1 w-4 h-0.5 bg-[#C89B3C]/0 group-hover:bg-[#C89B3C] transition-all duration-300 mx-auto"></div>
                 </div>
 
                 <div className="text-center group">
-                  <div className="text-3xl font-bold text-white group-hover:text-luxury-gold transition-colors duration-300">
+                  <div className="text-3xl font-bold text-white group-hover:text-[#C89B3C] transition-colors duration-300">
                     {formatSquareFeet(property.details.sqFt)}
                   </div>
                   <div className="text-sm text-white/70 uppercase tracking-wider mt-1">
                     Sq. Ft.
                   </div>
-                  <div className="mt-1 w-4 h-0.5 bg-luxury-gold/0 group-hover:bg-luxury-gold transition-all duration-300 mx-auto"></div>
+                  <div className="mt-1 w-4 h-0.5 bg-[#C89B3C]/0 group-hover:bg-[#C89B3C] transition-all duration-300 mx-auto"></div>
                 </div>
 
                 <div className="text-center group">
-                  <div className="text-3xl font-bold text-white group-hover:text-luxury-gold transition-colors duration-300">
+                  <div className="text-3xl font-bold text-white group-hover:text-[#C89B3C] transition-colors duration-300">
                     {property.details.garages}
                   </div>
                   <div className="text-sm text-white/70 uppercase tracking-wider mt-1">
                     Garages
                   </div>
-                  <div className="mt-1 w-4 h-0.5 bg-luxury-gold/0 group-hover:bg-luxury-gold transition-all duration-300 mx-auto"></div>
+                  <div className="mt-1 w-4 h-0.5 bg-[#C89B3C]/0 group-hover:bg-[#C89B3C] transition-all duration-300 mx-auto"></div>
                 </div>
               </div>
             </motion.div>
@@ -181,7 +181,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ property }) => {
             >
               <button
                 onClick={() => scrollToElement("schedule-viewing")}
-                className="group relative bg-luxury-gold text-black px-8 py-4 rounded-sm font-bold uppercase tracking-wider text-lg hover:bg-luxury-darkGold transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
+                className="group relative bg-[#C89B3C] text-black px-16 py-4 rounded-sm font-bold uppercase tracking-wider text-lg hover:bg-luxury-darkGold transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                 <FontAwesomeIcon icon={faCalendarCheck} className="mr-2" />
@@ -190,7 +190,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ property }) => {
 
               <button
                 onClick={() => scrollToElement("brochure")}
-                className="group relative bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-sm font-bold uppercase tracking-wider text-lg hover:bg-white/30 transition-all duration-300 transform hover:-translate-y-1"
+                className="group relative bg-white/20 backdrop-blur-sm border border-white/30 text-white px-16 py-4 rounded-sm font-bold uppercase tracking-wider text-lg hover:bg-white/30 transition-all duration-300 transform hover:-translate-y-1"
               >
                 <FontAwesomeIcon icon={faDownload} className="mr-2" />
                 Download Brochure
@@ -227,13 +227,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ property }) => {
                   <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-3 border border-white/20">
                     <FontAwesomeIcon
                       icon={faBuilding}
-                      className="text-luxury-gold"
+                      className="text-[#C89B3C]"
                     />
                   </div>
                   <div>
                     <h4 className="text-white font-bold">
                       Developed by{" "}
-                      <span className="text-luxury-gold">
+                      <span className="text-[#C89B3C]">
                         {property.developer.name}
                       </span>
                     </h4>

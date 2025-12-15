@@ -1228,7 +1228,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu, onClose }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="absolute top-full left-0 right-0 bg-[#1c1c1c] border-t-2 border-luxury-gold shadow-2xl"
+          className="absolute top-full left-0 right-0 bg-[#1c1c1c] border-t-2 border-[#C89B3C] shadow-2xl"
           onMouseLeave={onClose}
         >
           <div className="container mx-auto px-4 py-12">

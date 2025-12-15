@@ -54,7 +54,7 @@ const Header: React.FC = () => {
               >
                 <a
                   href={item.href}
-                  className="flex items-center uppercase text-xs font-medium tracking-wider text-white hover:text-luxury-gold transition-colors py-2"
+                  className="flex items-center uppercase text-xs font-medium tracking-wider text-white hover:text-[#C89B3C] transition-colors py-2"
                 >
                   {item.label}
                   <ChevronDown className="w-3 h-3 ml-1.5 opacity-70" />
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
                 {activeMenu === item.menuKey && (
                   <motion.div
                     layoutId="activeIndicator"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-luxury-gold"
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#C89B3C]"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
             <li>
               <a
                 href="/contact"
-                className="uppercase text-xs font-medium tracking-wider hover:text-luxury-gold transition-colors"
+                className="uppercase text-xs font-medium tracking-wider hover:text-[#C89B3C] transition-colors"
               >
                 Contact
               </a>
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
             <li>
               <a
                 href="/login"
-                className="bg-[#0f4583] text-white px-5 py-3 rounded-sm text-xs font-bold uppercase tracking-wider hover:bg-opacity-80 transition-all"
+                className="bg-[#004488] text-white px-5 py-3 rounded-sm text-xs font-bold uppercase tracking-wider hover:bg-opacity-80 transition-all"
               >
                 My Account
               </a>
@@ -95,7 +95,7 @@ const Header: React.FC = () => {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
-              className="p-2 text-white hover:text-luxury-gold transition"
+              className="p-2 text-white hover:text-[#C89B3C] transition"
             >
               {mobileMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -122,7 +122,7 @@ const Header: React.FC = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="block py-2 text-sm font-medium text-white hover:text-luxury-gold transition uppercase tracking-wider"
+                  className="block py-2 text-sm font-medium text-white hover:text-[#C89B3C] transition uppercase tracking-wider"
                 >
                   {item.label}
                 </a>

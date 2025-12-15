@@ -27,7 +27,7 @@ const DeveloperSection: React.FC<DeveloperSectionProps> = ({ developer }) => {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center px-6 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6 border border-white/20"
           >
-            <FontAwesomeIcon icon={faCrown} className="text-luxury-gold mr-2" />
+            <FontAwesomeIcon icon={faCrown} className="text-[#C89B3C] mr-2" />
             <span className="text-white/90 uppercase tracking-widest text-sm font-bold">
               Prestigious Developer
             </span>
@@ -40,7 +40,7 @@ const DeveloperSection: React.FC<DeveloperSectionProps> = ({ developer }) => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            Crafted by <span className="text-luxury-gold">Visionaries</span>
+            Crafted by <span className="text-[#C89B3C]">Visionaries</span>
           </motion.h2>
 
           <motion.p
@@ -77,7 +77,7 @@ const DeveloperSection: React.FC<DeveloperSectionProps> = ({ developer }) => {
                       className="h-20 mx-auto"
                     />
                     <div className="mt-6 flex items-center justify-center space-x-4">
-                      <span className="px-3 py-1 bg-luxury-gold/20 text-luxury-gold rounded-full text-sm">
+                      <span className="px-3 py-1 bg-[#C89B3C]/20 text-[#C89B3C] rounded-full text-sm">
                         #1 Developer
                       </span>
                       <span className="px-3 py-1 bg-white/10 text-white rounded-full text-sm">
@@ -89,19 +89,19 @@ const DeveloperSection: React.FC<DeveloperSectionProps> = ({ developer }) => {
 
                 <div className="grid grid-cols-3 gap-4 mb-8">
                   <div className="text-center p-4 bg-white/5 rounded-xl">
-                    <div className="text-2xl font-bold text-luxury-gold">
+                    <div className="text-2xl font-bold text-[#C89B3C]">
                       {developer.projectCount}+
                     </div>
                     <div className="text-white/70 text-sm">Projects</div>
                   </div>
                   <div className="text-center p-4 bg-white/5 rounded-xl">
-                    <div className="text-2xl font-bold text-luxury-gold">
+                    <div className="text-2xl font-bold text-[#C89B3C]">
                       {developer.countries}+
                     </div>
                     <div className="text-white/70 text-sm">Countries</div>
                   </div>
                   <div className="text-center p-4 bg-white/5 rounded-xl">
-                    <div className="text-2xl font-bold text-luxury-gold">
+                    <div className="text-2xl font-bold text-[#C89B3C]">
                       {developer.portfolioValue}
                     </div>
                     <div className="text-white/70 text-sm">Portfolio</div>
@@ -109,8 +109,8 @@ const DeveloperSection: React.FC<DeveloperSectionProps> = ({ developer }) => {
                 </div>
               </div>
             </div>
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-luxury-gold/10 rounded-full blur-xl"></div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-luxury-gold/5 rounded-full blur-xl"></div>
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-[#C89B3C]/10 rounded-full blur-xl"></div>
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#C89B3C]/5 rounded-full blur-xl"></div>
           </motion.div>
 
           <motion.div
@@ -120,12 +120,12 @@ const DeveloperSection: React.FC<DeveloperSectionProps> = ({ developer }) => {
             transition={{ duration: 0.6 }}
           >
             <div className="space-y-8">
-              <div className="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-luxury-gold/30 transition-all duration-300">
+              <div className="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-[#C89B3C]/30 transition-all duration-300">
                 <div className="flex items-start">
-                  <div className="bg-luxury-gold/20 p-3 rounded-xl mr-4">
+                  <div className="bg-[#C89B3C]/20 p-3 rounded-xl mr-4">
                     <FontAwesomeIcon
                       icon={faTrophy}
-                      className="text-luxury-gold text-xl"
+                      className="text-[#C89B3C] text-xl"
                     />
                   </div>
                   <div>
@@ -137,12 +137,12 @@ const DeveloperSection: React.FC<DeveloperSectionProps> = ({ developer }) => {
                 </div>
               </div>
 
-              <div className="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-luxury-gold/30 transition-all duration-300">
+              <div className="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-[#C89B3C]/30 transition-all duration-300">
                 <div className="flex items-start">
-                  <div className="bg-luxury-gold/20 p-3 rounded-xl mr-4">
+                  <div className="bg-[#C89B3C]/20 p-3 rounded-xl mr-4">
                     <FontAwesomeIcon
                       icon={faShieldAlt}
-                      className="text-luxury-gold text-xl"
+                      className="text-[#C89B3C] text-xl"
                     />
                   </div>
                   <div>
@@ -154,7 +154,7 @@ const DeveloperSection: React.FC<DeveloperSectionProps> = ({ developer }) => {
                 </div>
               </div>
 
-              <div className="mt-8 p-6 bg-gradient-to-r from-luxury-gold/20 to-transparent rounded-2xl border border-luxury-gold/30">
+              <div className="mt-8 p-6 bg-gradient-to-r from-[#C89B3C]/20 to-transparent rounded-2xl border border-[#C89B3C]/30">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
                     <img
@@ -170,7 +170,7 @@ const DeveloperSection: React.FC<DeveloperSectionProps> = ({ developer }) => {
                     <p className="text-gray-300 text-sm">
                       {developer.ceo.title}
                     </p>
-                    <p className="text-luxury-gold/80 text-sm mt-1">
+                    <p className="text-[#C89B3C]/80 text-sm mt-1">
                       "{developer.ceo.quote}"
                     </p>
                   </div>

@@ -70,10 +70,10 @@ const LocationSection: React.FC<LocationSectionProps> = ({ property }) => {
                   transition={{ delay: 0.2 + index * 0.1 }}
                   className="flex items-start"
                 >
-                  <div className="bg-luxury-gold/10 p-3 rounded-xl mr-4">
+                  <div className="bg-[#C89B3C]/10 p-3 rounded-xl mr-4">
                     <FontAwesomeIcon
                       icon={amenity.icon}
-                      className="text-luxury-gold text-xl"
+                      className="text-[#C89B3C] text-xl"
                     />
                   </div>
                   <div>
@@ -102,13 +102,13 @@ const LocationSection: React.FC<LocationSectionProps> = ({ property }) => {
             </div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div className="relative">
-                <div className="w-12 h-12 bg-luxury-gold rounded-full flex items-center justify-center shadow-lg">
+                <div className="w-12 h-12 bg-[#C89B3C] rounded-full flex items-center justify-center shadow-lg">
                   <FontAwesomeIcon
                     icon={faHome}
                     className="text-white text-xl"
                   />
                 </div>
-                <div className="absolute inset-0 bg-luxury-gold rounded-full animate-ping opacity-50"></div>
+                <div className="absolute inset-0 bg-[#C89B3C] rounded-full animate-ping opacity-50"></div>
               </div>
             </div>
           </motion.div>

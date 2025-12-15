@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
                   <li key={linkIndex}>
                     <a
                       href={link.href}
-                      className="mega-menu-link text-gray-400 text-sm hover:text-luxury-gold transition-colors"
+                      className="mega-menu-link text-gray-400 text-sm hover:text-[#C89B3C] transition-colors"
                     >
                       {link.label}
                     </a>
@@ -127,7 +127,7 @@ const Footer: React.FC = () => {
             <span>Worldwide | English</span>
             <a
               href="/support"
-              className="hover:text-luxury-gold transition-colors"
+              className="hover:text-[#C89B3C] transition-colors"
             >
               Customer Support
             </a>

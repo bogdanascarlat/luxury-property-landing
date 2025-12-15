@@ -85,7 +85,7 @@ const FeaturesGrid: React.FC<FeaturesGridProps> = ({ property }) => {
               transition={{ delay: index * 0.1 }}
               className="group p-8 rounded-2xl bg-gray-50 hover:bg-luxury-navy transition-all duration-500 transform hover:-translate-y-2"
             >
-              <div className="text-luxury-gold text-4xl mb-4">
+              <div className="text-[#C89B3C] text-4xl mb-4">
                 <FontAwesomeIcon icon={feature.icon} />
               </div>
               <h3 className="text-2xl font-bold text-luxury-navy group-hover:text-white mb-3">
@@ -118,7 +118,7 @@ const FeaturesGrid: React.FC<FeaturesGridProps> = ({ property }) => {
               <p className="text-xl mb-8">
                 Experience this property from anywhere in the world
               </p>
-              <button className="bg-luxury-gold text-black px-8 py-3 rounded-lg font-bold text-lg hover:bg-luxury-gold/90 transition-colors">
+              <button className="bg-[#C89B3C] text-black px-8 py-3 rounded-lg font-bold text-lg hover:bg-[#C89B3C]/90 transition-colors">
                 Launch Virtual Tour
               </button>
             </div>

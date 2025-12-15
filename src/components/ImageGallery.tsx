@@ -44,14 +44,14 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
               </div>
               <div className="flex items-center space-x-3">
                 <span className="text-sm text-gray-600">
-                  <span className="font-bold text-luxury-gold">
+                  <span className="font-bold text-[#C89B3C]">
                     {currentIndex + 1}
                   </span>
                   /{images.length}
                 </span>
                 <button
                   onClick={toggleFullscreen}
-                  className="flex items-center text-gray-600 hover:text-luxury-gold transition-colors text-sm"
+                  className="flex items-center text-gray-600 hover:text-[#C89B3C] transition-colors text-sm"
                 >
                   <FontAwesomeIcon icon={faExpand} className="mr-1" />
                   Fullscreen
@@ -83,7 +83,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
 
               {virtualTourUrl && (
                 <div className="absolute top-4 left-4">
-                  <span className="bg-luxury-gold/90 text-black px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center">
+                  <span className="bg-[#C89B3C]/90 text-black px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center">
                     <FontAwesomeIcon icon={faVrCardboard} className="mr-1.5" />
                     360° Tour
                   </span>
@@ -96,9 +96,9 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
                 <button
                   key={index}
                   onClick={() => goToImage(index)}
-                  className={`relative aspect-square rounded-lg overflow-hidden border-2 transition-all duration-200 hover:border-luxury-gold focus:outline-none focus:ring-2 focus:ring-luxury-gold/50 ${
+                  className={`relative aspect-square rounded-lg overflow-hidden border-2 transition-all duration-200 hover:border-[#C89B3C] focus:outline-none focus:ring-2 focus:ring-[#C89B3C]/50 ${
                     currentIndex === index
-                      ? "border-luxury-gold scale-105"
+                      ? "border-l[#C89B3C] scale-105"
                       : "border-transparent"
                   }`}
                 >
@@ -109,7 +109,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
                   />
                   <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-all duration-200"></div>
                   {currentIndex === index && (
-                    <div className="absolute top-1 right-1 w-5 h-5 bg-luxury-gold rounded-full flex items-center justify-center text-white text-xs">
+                    <div className="absolute top-1 right-1 w-5 h-5 bg-[#C89B3C] rounded-full flex items-center justify-center text-white text-xs">
                       ✓
                     </div>
                   )}
@@ -171,7 +171,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
                     onClick={() => goToImage(index)}
                     className={`relative flex-shrink-0 w-20 h-12 rounded-lg overflow-hidden transition-all ${
                       currentIndex === index
-                        ? "ring-2 ring-luxury-gold scale-105"
+                        ? "ring-2 ring-[#C89B3C] scale-105"
                         : "opacity-40 hover:opacity-100"
                     }`}
                   >
